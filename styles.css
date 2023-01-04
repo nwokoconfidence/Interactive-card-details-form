@@ -1,0 +1,333 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: 'Space Grotesk', sans-serif;
+}
+
+.main{
+display: flex;
+}
+
+.firstscreen{
+height: 100vh;
+background: url("./bg-main-desktop.png");
+background-size: cover;
+background-repeat: no-repeat;
+background-position: center;
+width: 32%;
+margin-left: 0px;
+position: relative;
+}
+
+.card-body{
+    height: 27vh;
+    width: 330px;
+    background: url("./bg-card-front.png");
+    background-size: cover;
+    background-position: center;
+    border-radius: 10px;
+    position: absolute;
+    top: 130px;
+    left: 180px;
+}
+
+.card-body img{
+    width: 20%;
+    margin-top: 20px;
+    margin-left: 20px;
+}
+
+#card{
+    margin-top: 42px;
+    margin-left: 40px;
+    color: #fff;
+    font-size: 20px;
+    letter-spacing: 5px;
+}
+
+.zero{
+    display: flex;
+    align-items: center;
+    margin-top: 42px;
+    margin-left: 20px;
+}
+
+.zero li{
+    list-style: none;
+    color: #fff;
+    font-size: 20px;
+    margin-left: 6px;
+    letter-spacing: 3px;
+}
+
+.jane{
+    display: flex;
+    align-items: center;
+    margin-top: 30px;
+    justify-content: space-between;
+}
+.jane li{
+    list-style: none;
+    color: #fff;
+    text-transform: uppercase;
+    font-size: 11px;
+}
+
+#carr{margin-left: 20px;}
+#carrr{margin-right: 20px; }
+
+.back-card{
+    height: 27vh;
+    width: 330px;
+    background: url("./bg-card-back.png");
+    background-size: cover;
+    background-position: center;
+    border-radius: 10px;
+    position: absolute;
+    top: 340px;
+    left: 260px;
+}
+
+.back-card p{
+    font-size: 11px;
+    color: rgb(238, 231, 231);
+    margin-top: 85px;
+    margin-left: 250px;
+    letter-spacing: 2px;
+}
+
+.secondscreen{
+height: 100vh;
+width: 25%;
+margin-left: 260px;
+}
+
+small{
+    color: red;
+    display: none;
+    font-size: 10px;
+}
+
+.form-1{
+    display: flex;
+    flex-direction: column;
+    margin-top: 200px;
+}
+form label{
+    font-size: 11px;
+    text-transform: uppercase;
+}
+
+.form-2{
+    margin-top: 15px;
+    display: flex;
+    flex-direction: column;
+}
+
+#card1{
+    width: 280px;
+    border-radius: 8px;
+    height: 35px;
+    border: 1px solid gainsboro;
+    margin-top: 5px;
+}
+
+#card2{
+    width: 280px;
+    border-radius: 8px;
+    height: 35px;
+    border: 1px solid gainsboro;
+    margin-top: 5px;
+}
+
+.exp{
+    display: flex;
+    flex-direction: column;
+    margin-top: 15px;
+}
+
+.form-3{
+    display: flex;
+}
+
+.form-3 #card3{
+    height: 35px;
+    width: 60px;
+    border: 1px solid gainsboro;
+    border-radius: 8px;
+}
+
+.form-3 #card4{
+    height: 35px;
+    width: 60px;
+    border: 1px solid gainsboro;
+    border-radius: 8px;
+    margin-top: 5px;
+}
+
+.form-3 #card5{
+    height: 35px;
+    width: 140px;
+    border: 1px solid gainsboro;
+    border-radius: 8px;
+    margin-top: 5px;
+}
+
+.cvv{
+    display: flex;
+    flex-direction: column;
+    margin-left: 15px;
+    margin-top: 15px;
+}
+
+#btn{
+    margin-top: 25px;
+    width: 280px;
+    height: 37px;
+    border-radius: 5px;
+    border: none;
+    background-color: hsl(278, 68%, 11%);
+    color: #fff;
+}
+
+/*THANK YOU SECTION*/
+
+.complete{
+    width: 55px;
+   margin-left: 40%;
+   margin-top:200px ;
+}
+.you{
+    font-family: 'Space Grotesk', sans-serif;
+    font-size: 22px;
+    text-transform: uppercase;
+    margin-left: 29%;
+    margin-top: 30px;
+}
+.add{
+    font-size: 13px;
+    color: gray;
+    margin-left: 20%;
+    margin-top: 15px;
+}
+#btn-2{
+    margin-left: 18px;
+    margin-top: 25px;
+    width: 280px;
+    height: 37px;
+    border-radius: 5px;
+    border: none;
+    background-color:hsl(278, 68%, 11%);
+    color: #fff;
+}
+
+@media screen and (max-width:480px){
+.main{
+
+    flex-direction: column;
+}
+
+.firstscreen{
+   width: 480px;
+   height: 240px;
+   background: url("./bg-main-mobile.png");
+   background-size: cover;
+}
+
+.card-body{
+    height: 25vh;
+    width: 310px;
+    z-index: 2;
+    top: 132px;
+    left: 38px;
+}
+
+.zero li{
+    font-size: 19px;
+}
+
+.jane{margin-top: 18px;}
+
+.back-card{
+    height: 25vh;
+    width: 310px;
+    z-index: 1;
+    top: 30px;
+    left: 90px;
+
+}
+.back-card p{margin-top: 80px;}
+
+.secondscreen{
+    width: 340px;
+    height: 500px;
+    margin: 0 auto;
+}
+
+form label{
+    font-size: 14px;
+}
+
+.form-1{
+    margin-top: 150px;
+    
+}
+
+.form-2{
+    margin-top: 18px;
+}
+
+.exp{
+    margin-top: 18px;
+}
+
+#card1{
+    width: 340px;
+    height: 50px;
+}
+
+#card2{
+    width: 340px;
+    height: 50px;
+}
+
+.form-3 #card3{
+    width: 66px;
+    height: 50px;
+}
+
+.form-3 #card4{
+    width: 66px;
+    height: 50px;
+    margin-left: 5px;
+}
+
+.form-3 #card5{
+    width: 181px;
+    height: 50px;
+}
+
+.cvv{
+    margin-left: 15px;
+    margin-top: 19px;
+}
+
+#btn{
+    margin-top: 30px;
+    width: 340px;
+    height: 50px;
+}
+
+.thanks{
+    margin-top: -40px;
+}
+
+.complete{
+    width: 75px;
+}
+
+}
